@@ -219,19 +219,19 @@ export default function MaximilianMarinaDetailingWebsite() {
             <p className="mt-3 text-sm leading-6 text-slate-600">
               This form can be connected later to Formspree, email, or another lead form service.
             </p>
-            <form className="mt-6 space-y-4">
-              <input className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-900" placeholder="Full name" />
+            <form action="https://formspree.io/f/mlgadnyp" method="POST" className="mt-6 space-y-4">
+              <input name="name" className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-900" placeholder="Full name" />
               <div className="grid gap-4 md:grid-cols-2">
-                <input className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Phone number" />
-                <input className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Email" />
+                <input name="phone" className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Phone number" />
+                <input name="email" className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Email" />
               </div>
               <div className="grid gap-4 md:grid-cols-2">
-                <input className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Boat type" />
-                <input className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Boat length / size" />
+                <input name="boat_type" className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Boat type" />
+                <input name="boat_size" className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Boat length / size" />
               </div>
-              <input className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Marina, dock, or service location" />
+              <input name="location" className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none" />
               <textarea className="min-h-[130px] w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900" placeholder="Tell us the condition of the boat, what services you want, and anything else we should know" />
-              <button type="button" className="w-full rounded-2xl bg-slate-900 px-5 py-3 font-semibold text-white">
+              <button type="submit" className="w-full rounded-2xl bg-slate-900 px-5 py-3 font-semibold text-white">
                 Submit Quote Request
               </button>
             </form>
@@ -243,7 +243,7 @@ export default function MaximilianMarinaDetailingWebsite() {
             <p className="mt-3 text-sm leading-6 text-slate-300">
               Use this section for preferred appointment requests before you connect a live scheduler.
             </p>
-            <form className="mt-6 space-y-4">
+            <form action="https://formspree.io/f/mlgadnyp" method="POST" className="mt-6 space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Preferred date" />
                 <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Preferred time" />
