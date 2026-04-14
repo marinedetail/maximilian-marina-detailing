@@ -302,8 +302,12 @@ export default function MaximilianMarinaDetailingWebsite() {
                 </div>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#quote" className="rounded-2xl bg-slate-900 px-5 py-3 font-semibold text-white">Get Quote</a>
-                <a href="#booking" className="rounded-2xl border border-slate-300 px-5 py-3 font-semibold text-slate-900">Book Now</a>
+<a href="tel:2105850046" className="rounded-2xl bg-slate-900 px-5 py-3 font-semibold text-white">
+  Call Now
+</a>
+<a href="mailto:mmarinadetailing@gmail.com" className="rounded-2xl border border-slate-300 px-5 py-3 font-semibold text-slate-900">
+  Email Me
+</a>
               </div>
             </div>
           </div>
