@@ -244,10 +244,22 @@ export default function MaximilianMarinaDetailingWebsite() {
               Use this section for preferred appointment requests before you connect a live scheduler.
             </p>
             <form action="https://formspree.io/f/mlgadnyp" method="POST" className="mt-6 space-y-4">
-              <div className="grid gap-4 md:grid-cols-2">
-                <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Preferred date" />
-                <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Preferred time" />
-              </div>
+               <div className="grid gap-4 md:grid-cols-2">
+                
+  <input
+    type="date"
+    name="preferred_date"
+    className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none"
+    required
+  />
+
+  <input
+    type="time"
+    name="preferred_time"
+    className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none"
+    required
+  />
+</div>
               <select name="service" className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none">
                 <option className="text-slate-900">Select service</option>
                 <option className="text-slate-900">Boat Detailing</option>
