@@ -248,16 +248,16 @@ export default function MaximilianMarinaDetailingWebsite() {
                 <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Preferred date" />
                 <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Preferred time" />
               </div>
-              <select className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none">
+              <select name="service" className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none">
                 <option className="text-slate-900">Select service</option>
                 <option className="text-slate-900">Boat Detailing</option>
                 <option className="text-slate-900">Jet Ski Detailing</option>
                 <option className="text-slate-900">Polishing & Waxing</option>
                 <option className="text-slate-900">Ceramic Coating</option>
               </select>
-              <input className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Service address / marina / dock" />
-              <textarea className="min-h-[130px] w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Extra details about access, watercraft, or preferred setup" />
-              <button type="button" className="w-full rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900">
+              <input name="service_address" className="w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Service address / marina / dock" />
+              <textarea name="booking_details" className="min-h-[130px] w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-slate-400" placeholder="Extra details about access, watercraft, or preferred setup" />
+              <button type="submit" className="w-full rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900">
                 Request Booking
               </button>
             </form>
